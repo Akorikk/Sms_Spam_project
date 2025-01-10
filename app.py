@@ -32,7 +32,7 @@ input_sms = st.text_input("Enter Message")
 if st.button('Predict'):
 
     # 1. preprocess
-    transformed_sms = stemming(input_sms) # type: ignore
+    transformed_sms = stemming(input_sms)
     # 2. vectorize
     vector_input = cv.transform([transformed_sms])
     # 3. predict
